@@ -1,0 +1,1 @@
+document.querySelectorAll(".magnetic-card").forEach(card=>{card.addEventListener("mousemove",e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`translate(${x*8}px,${y*8}px)`});card.addEventListener("mouseleave",()=>card.style.transform="translate(0,0)")});
